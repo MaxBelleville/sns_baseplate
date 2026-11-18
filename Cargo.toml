@@ -1,0 +1,14 @@
+[package]
+name = "sns_baseplate"
+version = "0.1.0"
+edition = "2024"
+
+
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+rhai = "1.27.0"
+ron = "0.12.3"
+bevy_math = { version = "0.20.1", features = ["serialize"] }
+sns_asset_manager = { git = "https://github.com/MaxBelleville/sns_asset_manager.git" }
+sns_helper = { git = "https://github.com/MaxBelleville/sns_helper.git", features=["bevy","simdnoise"] }
